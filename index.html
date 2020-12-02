@@ -4,7 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
-        <title>"Happy Birthday Soul</title>
+        <title>"Happy Birthday Chirag"</title>
         <style>
             body{
                 background-color: rgb(224, 175, 175);
@@ -14,8 +14,8 @@
         </style>
     </head>
     <body>
-        <h1>Happy Birthday Soul my Guy! 🎉</h1>
-        <p>I know couldn't do much but a lil surpise from my side(Spooki)<br>Love you my ♥</p>
+        <h1 id="title">Countdown For Chirag's Birthday🎉</h1>
+        <p id="message"></p>
     <p id="days"></p>    
     <p id="hours"></p>
     <p id="mins"></p>
@@ -23,7 +23,7 @@
     <h2 id="end"></h2>
     <script>
     // The data/time we want to countdown to
-    var countDownDate = new Date("Dec 1, 2021 00:00:01").getTime();
+    var countDownDate = new Date("Dec 2, 2020 20:35:01").getTime();
 
     // Run myfunc every second
     var myfunc = setInterval(function() {
@@ -46,6 +46,8 @@
     // Display the message when countdown is over
     if (timeleft < 0) {
         clearInterval(myfunc);
+        document.getElementById("title").innerHTML = "Happy Birthday Chirag 🎉"
+        document.getElementById("message").innerHTML = "Yay, happy Birthday chirag, love u! -from Spookie(Sumir)"
         document.getElementById("days").innerHTML = ""
         document.getElementById("hours").innerHTML = "" 
         document.getElementById("mins").innerHTML = ""
